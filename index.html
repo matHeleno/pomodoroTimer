@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador estilo pomodoro">
+  <title>FocusTimer - Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="timer">
+      <div class="minutes">
+        25
+      </div>
+      <span>
+        :
+      </span>
+      <div class="seconds">
+        00
+      </div>
+    </div>
+    <div class="menu">
+      <button class="play"><img src="assets/play.svg" alt=""></button>
+      <button class="pause hide"><img src="assets/pause.svg" alt=""></button>
+      <button class="set"><img src="assets/timer.svg" alt=""></button>
+      <button class="stop hide"><img src="assets/stop.svg" alt=""></button>
+    </div>
+  </main>
+  <button class="volume">
+    <img src="assets/volume.svg" alt="">
+  </button>
+  <button class="mute hide">
+    <img src="assets/mute.svg" alt="">
+  </button>
+  <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

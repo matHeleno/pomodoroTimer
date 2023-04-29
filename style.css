@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-dark: #121214;
+  --color-light: #FFFFFF;
+  --color-menu: rgba(66, 211, 255, 0.13);
+}
+
+body {
+  background: var(--color-dark);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 1.6rem;
+
+  margin-top: -5rem;
+  height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.timer {
+  display: flex;
+
+  color: var(--color-light);
+  font-size: clamp(4rem, 2rem + 10vw,8.8rem);
+  font-weight: 700;
+  line-height: 10.3rem;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  background: var(--color-menu);
+
+  border-radius: 1000rem;
+  padding: 2.2rem 4rem;
+}
+
+.volume, .mute {
+  position: absolute;
+  right: 4rem;
+  bottom: 3.2rem;
+}
+
