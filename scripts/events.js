@@ -17,7 +17,7 @@ export function Events(controls, timer, sounds) {
   
   buttonPause.addEventListener('click', function() {
     controls.pause()
-    clearTimeout(timerTimeout)
+    timer.pause()
     sounds.pressButton()
   })
   

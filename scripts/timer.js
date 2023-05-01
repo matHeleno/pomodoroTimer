@@ -11,6 +11,10 @@ export function Timer({
   let timerTimeout
   let minutes = (displayMinutes.textContent)
 
+  const pause = () => {
+    clearTimeout(timerTimeout)
+  }
+
   const updateDisplay = (newMinutes, seconds) => {
 
     newMinutes = newMinutes === undefined ? minutes : newMinutes
@@ -63,6 +67,7 @@ export function Timer({
     reset,
     updateDisplay,
     updateMinutes,
-    hold
+    hold, 
+    pause
   }
 }
